@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.title{
+    font-family: "PT Serif", normal;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+.who{
+    font-family: "Poppins", normal;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.description{
+    font-family: "Poppins", normal;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75vw;
+    justify-content: center;
+    margin: 0px;
+    align-items: center;
+
+}
+
+.team .container:nth-child(2){
+    margin-top: 66px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.name{
+    font-family: "Poppins", normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.img{
+    max-width: 50vw;
+    max-height: 50vh;
+
+}
+
+.job{
+    font-family: "PT Serif", normal;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    
+}
+
+.whole{
+
+}
+
+.person{
+    display: flex;
+    align-items: center;
+}
+
+.top-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+
+    .img{
+        max-width: 25vw;
+        max-height: 25vh;
+    }
+
+    .job{
+        font-size: 10px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    .description{
+        font-size: 14px;
+    }
+
+    .team{
+        max-width: fit-content;
+    }
+    .team .container:nth-child(even){
+        margin-top: 20px;
+    }
+}
