@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
+
+*{
+    contain: content;
+    margin: 0px;
+    border: 0px;
+}
+
+/* Text layout for title */
 .title{
     font-family: "PT Serif", normal;
     font-size: 36px;
@@ -7,6 +15,7 @@
     color: black;
 }
 
+/* Text layout for subtitle */
 .who{
     font-family: "Poppins", normal;
     font-size: 18px;
@@ -14,12 +23,14 @@
     text-transform: uppercase;
 }
 
+/* Text layout for team description */
 .description{
     font-family: "Poppins", normal;
     font-size: 18px;
     font-weight: 400;
 }
 
+/* Alignment for each team member */
 .team{
     display: flex;
     flex-wrap: wrap;
@@ -29,18 +40,24 @@
 
 }
 
+/* Margin fix for specific team member */
 .team .container:nth-child(2){
     margin-top: 66px;
 }
+
+/* Margin fix for specific team member */
 .team .container:nth-child(5){
     margin-top: 66px;
 }
 
+/* Alignment for each team member */
 .container{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
+/* Text layout for team member name */
 .name{
     font-family: "Poppins", normal;
     font-weight: 600;
@@ -48,12 +65,14 @@
     text-transform: capitalize;
 }
 
+/* Image resizing for team member photo */
 .img{
     max-width: 50vw;
     max-height: 50vh;
 
 }
 
+/* Text layout for team job title */
 .job{
     font-family: "PT Serif", normal;
     font-size: 12px;
@@ -63,29 +82,34 @@
     
 }
 
+/* Layout for whole page */
 .whole{
     display: flex;
     flex-direction: column;
 }
 
+/* Container for name and photo */
 .person{
     display: flex;
     align-items: center;
 }
 
+/* Container for title/subtitle/description */
 .top-text{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
 
 }
 
+/* Flexbox for subtitle/description */
 .info{
     display: flex;
     flex-direction: column;
     max-width: 75vw;
 }
+
+/* Changes for smaller screen sizes */
 @media only screen and (max-width: 600px) {
 
     .img{
@@ -112,5 +136,7 @@
 
     .top-text{
         flex-direction: column;
+        padding-left: 12px;
     }
+
 }
