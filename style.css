@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
 
+   
+
 *{
     contain: content;
     margin: 0px;
@@ -13,6 +15,7 @@
     font-size: 36px;
     font-weight: 700;
     color: black;
+    padding: 110px 215px 0px 243px;
 }
 
 /* Text layout for subtitle */
@@ -28,33 +31,15 @@
     font-family: "Poppins", normal;
     font-size: 18px;
     font-weight: 400;
-}
-
-/* Alignment for each team member */
-.team{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 75vw;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* Margin fix for specific team member */
-.team .container:nth-child(2){
-    margin-top: 66px;
-}
-
-/* Margin fix for specific team member */
-.team .container:nth-child(5){
-    margin-top: 66px;
+    width: 439px;
+    height: 87px;
 }
 
 /* Alignment for each team member */
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+
 }
 
 /* Text layout for team member name */
@@ -107,7 +92,39 @@
     display: flex;
     flex-direction: column;
     max-width: 75vw;
+    padding-top: 110px;
+    padding-bottom: 10px;
 }
+
+/* Larger screen format */
+@media only screen and (min-width: 601px){
+    /* Alignment for each team member */
+    .team{
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; */
+    
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        
+        margin: 244px 275px 156px 241px;
+    
+    }
+    
+    /* Margin fix for specific team member */
+    .team .container:nth-child(2){
+        margin-top: 66px;
+    }
+    
+    /* Margin fix for specific team member */
+    .team .container:nth-child(5){
+        margin-top: 66px;
+    }
+    
+    }
+
 
 /* Changes for smaller screen sizes */
 @media only screen and (max-width: 600px) {
@@ -128,15 +145,23 @@
     }
 
     .team{
+        display: flex;
+        flex-wrap: wrap;
         max-width: 375px;
     }
     .team .container:nth-child(even){
         margin-top: 66px;
     }
 
+    .team .container:nth-child(odd){
+        padding-left: 12px;
+    }
+
     .top-text{
         flex-direction: column;
         padding-left: 12px;
     }
+
+
 
 }
